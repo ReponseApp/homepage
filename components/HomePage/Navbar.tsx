@@ -1,4 +1,4 @@
-import type { FC } from "react"
+import type {FC} from "react"
 import { CONFIG } from "@libs/config"
 
 export const Navbar:FC = function() {
