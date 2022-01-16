@@ -32,7 +32,7 @@ export const Main: FC = () => {
               src="./assets/background.png"
             />
             <img
-              className="top-48 2xl:w-[47rem]  md:w-[34rem] absolute 2xl:top-64  md:top-60 shadow-xl rounded-md"
+              className="top-48 2xl:w-[47rem]  md:w-[32rem] absolute 2xl:top-64  md:top-60 shadow-xl rounded-md"
               src="./assets/reponse.png"
             />
           </div>

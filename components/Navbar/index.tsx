@@ -28,6 +28,7 @@ export const Navbar: FC = function () {
                 {CONFIG.NAVBAR_LIST.map((r) => (
                   <a
                     href={r.href}
+                    key={r.title}
                     className="mr-5 hover:text-opacity-100 transition"
                   >
                     {r.title}
