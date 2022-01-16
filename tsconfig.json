@@ -14,11 +14,12 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "baseUrl" : ".",
+    "baseUrl": ".",
     "paths": {
       "@components/*": ["./components/*"],
-      "@assets/*" : ["./assets/*"],
-      "@libs/*": ["./libs/*"]
+      "@assets/*": ["./assets/*"],
+      "@libs/*": ["./libs/*"],
+      "@public/*": ["/public/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
