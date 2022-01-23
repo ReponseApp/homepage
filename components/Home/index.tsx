@@ -9,12 +9,10 @@ import { MainPhone } from "@components/MainPhone";
 import { AboutOne } from "@components/About/one";
 import { AboutTwo } from "@components/About/two";
 
+import { Footer } from "@components/Footer";
+
 import icon from "@public/icon.svg";
 import { MdArrowForward } from "react-icons/md";
-
-
-
-
 import { useState, useEffect } from "react";
 
 export const HomePage = function () {
@@ -42,6 +40,11 @@ export const HomePage = function () {
       return () => window.removeEventListener("resize", handleResize);
     }
   }, []); // Empty array ensures that effect is only run on mount
+
+  console.log("%c" + "Hold Up!", "color: #2a2c3d; -webkit-text-stroke: 2px black; font-size: 72px; font-weight: bold;");
+  console.log("%c" + "If something is wrong, please contact us..", "color: #7289DA; font-size: 40px; font-weight: bold;");
+  console.log("%c" + "bug@reponse.app || contact@reponse.app", "color: white; font-size: 20px; font-weight: bold;");
+
   if(windowSize && windowSize.width > 1000){
     return (
       <div>
@@ -49,6 +52,7 @@ export const HomePage = function () {
         <Main />
         <AboutOne />
         <AboutTwo />
+        <Footer />
       </div>
     )
   }
