@@ -62,6 +62,7 @@ export const HomePage = function () {
       <MainPhone />
       <AboutOne />
       <AboutTwo />
+      <Footer />
     </div>
   )
 
