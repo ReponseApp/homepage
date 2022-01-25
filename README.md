@@ -1,6 +1,6 @@
 ### 💦 Reponse.app
 >  The official website of Reponse! 
->  This project is completely open source. So you can use it wherever you want ☆*: .｡. o(≧▽≦)o .｡.:*☆
+>  This project is completely open source. So you can use it wherever you want
 
 <p align="center">
   <img src="https://api.netlify.com/api/v1/badges/ecb2429b-4839-4076-adef-4ce7d1190315/deploy-status" alt="Deploy status" />
