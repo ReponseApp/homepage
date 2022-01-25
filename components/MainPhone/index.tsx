@@ -7,7 +7,6 @@ export const MainPhone: FC = () => {
       <div className="">
       <img src="assets/reponse.png" alt="" className="rounded-xl drop-shadow-xl"/>
         <div className="mt-10">
-          
           <p className="font-semibold text-white text-left text-4xl 2xl:text-4xl md:text-3xl">
             Reponse
           </p>

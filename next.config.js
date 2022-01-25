@@ -3,8 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
   server: {
     port: 8000,
-    host: '0.0.0.0',
+    host: "0.0.0.0",
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

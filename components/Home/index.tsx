@@ -22,7 +22,7 @@ export const HomePage = function () {
   });
   useEffect(() => {
     // only execute all the code below in client side
-    if (typeof window !== 'undefined') {
+    if (typeof window !== "undefined") {
       var  handleResize = function() {
         return setWindowSize({
           width: window.innerWidth,
@@ -46,7 +46,7 @@ export const HomePage = function () {
   console.log("%c" + "bug@reponse.app || contact@reponse.app", "color: white; font-size: 20px; font-weight: bold;");
 
   if(windowSize && windowSize.width > 1000){
-    return (
+    return(
       <div>
         <NavbarPc />
         <Main />
@@ -54,7 +54,7 @@ export const HomePage = function () {
         <AboutTwo />
         <Footer />
       </div>
-    )
+    ); 
   }
   return (
     <div>
@@ -64,7 +64,7 @@ export const HomePage = function () {
       <AboutTwo />
       <Footer />
     </div>
-  )
+  );
 
 
 }
