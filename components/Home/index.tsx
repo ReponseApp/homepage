@@ -16,6 +16,10 @@ import { MdArrowForward } from "react-icons/md";
 import { useState, useEffect } from "react";
 
 export const HomePage = function () {
+  console.log("%c" + "Hold Up!", "color: #2a2c3d; -webkit-text-stroke: 2px black; font-size: 72px; font-weight: bold;");
+  console.log("%c" + "If something is wrong, please contact us..", "color: #7289DA; font-size: 40px; font-weight: bold;");
+  console.log("%c" + "bug@reponse.app || contact@reponse.app", "color: white; font-size: 20px; font-weight: bold;");
+
   const [windowSize, setWindowSize] = useState({
     width: 0,
     height: 0
@@ -28,7 +32,7 @@ export const HomePage = function () {
           width: window.innerWidth,
           height: window.innerHeight,
         });
-      }
+      };
     
       // Add event listener
       window.addEventListener("resize", handleResize);
@@ -40,11 +44,6 @@ export const HomePage = function () {
       return () => window.removeEventListener("resize", handleResize);
     }
   }, []); // Empty array ensures that effect is only run on mount
-
-  console.log("%c" + "Hold Up!", "color: #2a2c3d; -webkit-text-stroke: 2px black; font-size: 72px; font-weight: bold;");
-  console.log("%c" + "If something is wrong, please contact us..", "color: #7289DA; font-size: 40px; font-weight: bold;");
-  console.log("%c" + "bug@reponse.app || contact@reponse.app", "color: white; font-size: 20px; font-weight: bold;");
-
   if(windowSize && windowSize.width > 1000){
     return(
       <div>

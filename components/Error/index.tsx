@@ -12,9 +12,9 @@ export const Custom404: FC<ICustom404> = function({ statusCode = 404 }) {
     useEffect(() => {
       setInterval(() => leftSecond >= 0 ? setLeftSecond(leftSecond - 1) : null, 900);
       setTimeout(() => {
-        window.location.assign("/")
-      }, 5000)
-    })
+        window.location.assign("/");
+      }, 5000);
+    });
     return (
      <div className="bg-Bgnavbar w-full h-full absolute flex items-center justify-center text-white">
         <div className="items-center flex flex-col space-y-7">
@@ -25,5 +25,5 @@ export const Custom404: FC<ICustom404> = function({ statusCode = 404 }) {
           
         </div>
      </div>
-    )
-}
+    );
+};

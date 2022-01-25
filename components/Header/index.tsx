@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import Head from "next/head"
+import Head from "next/head";
 interface IProps {
   title: string
 }
@@ -28,5 +28,5 @@ export const Header:FC<IProps> = function({title}){
         <meta property="twitter:domain" content="reponse.app"/>
 
       </Head>
-    )
-}
+    );
+};
