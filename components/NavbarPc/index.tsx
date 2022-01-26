@@ -8,7 +8,7 @@ export const NavbarPc: FC = function () {
         <div className="items-center w-9/12 ">
           <div className="invisible md:visible flex w-full justify-between">
             <div className="flex items-center">
-              <img
+              <img    
                 src="https://media.discordapp.net/attachments/882998307868250183/909003876030627850/1636793015270.png?width=671&height=671"
                 alt=""
                 className="w-14 h-auto"
