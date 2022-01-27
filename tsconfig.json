@@ -20,7 +20,7 @@
       "@assets/*": ["./assets/*"],
       "@libs/*": ["./libs/*"],
       "@public/*": ["/public/*"],
-      "@blog/*": ["/blog/*"]
+      "@blog/*": ["./blogs/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

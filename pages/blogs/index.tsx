@@ -1,5 +1,6 @@
 import { CONFIG } from "@libs/config";
 import { NavbarPc } from "@components/NavbarPc";
+import { Header } from "@components/Header";
 
 const BlogIndex = () => {
   return (
@@ -24,6 +25,7 @@ const BlogIndex = () => {
           ))}
         </div>
       </div>
+      <Header title="Blog"/>
     </div>
 
       
@@ -31,6 +33,8 @@ const BlogIndex = () => {
 };
 
 export default BlogIndex;
+
+
 
 
 

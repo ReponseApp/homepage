@@ -7,10 +7,10 @@ export const Main: FC = () => {
 
         <div className="flex w-5/12 justify-center">
           <div className="mt-5">
-            <p className="font-semibold text-white text-left text-xl 2xl:text-4xl md:text-3xl">
+            <p className="font-semibold text-white text-left text-xl 2xl:text-4xl md:text-4xl">
               Reponse
               <br />
-              <span className="2xl:text-4xl md:text-3xl font-light">
+              <span className="2xl:text-4xl md:text-2xl text-gray-300 font-light">
                 Send Messages, Not Personal Data.
               </span>
             </p>
@@ -19,7 +19,7 @@ export const Main: FC = () => {
               Join 250,000 people using Reponse worldwide!
             </p>
             <div className="text-white">
-              <button className="bg-[#2260DA]  px-14 font-medium rounded-full py-2">
+              <button className="bg-[#2260DA] drop-shadow-xl px-14 font-medium rounded-full py-2">
                 Launch
               </button>
               <button className=" my-4 md:mx-4 bg-[#1BC27C] px-14 font-medium rounded-full py-2">
