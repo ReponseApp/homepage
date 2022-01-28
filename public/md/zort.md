@@ -1,8 +1,10 @@
 ---
-description: Merhaba
-title: Noir's Code
-date: 2008
+description: zort
+title: Noir's zort
+date: 2007
 photo: https://i.imgur.com/WJKrFHY.png
+file: zort.md
+link: zort
 ---
 
 
