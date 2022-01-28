@@ -1,12 +1,11 @@
-A paragraph with *emphasis* and **strong importance**.
+# Hi!
 
-# A block quote with ~strikethrough~ and a URL: https://reactjs.org.
+Hi! Welcome to our first blog post.
+We will post weekly content on this blog page.
+#
+We are going to talk about new features we will release, and how to use them!(and etc..)
 
-* Lists
-* [ ] todo
-* [x] done
+# Weakly Report.
 
-A table:
+![Photo](https://reponse.app/assets/reponse.png)
 
-| a | b |
-| - | - |

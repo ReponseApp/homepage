@@ -25,16 +25,9 @@ export const CONFIG = {
       photo: "https://i.imgur.com/WJKrFHY.png",
       title: "Hello World",
       desc: "This is a blog post",
-      file: "/helloWorld.md/",
+      file: "hello-world.md",
       link: "helloworld",
-    },
-    { 
-      photo: "https://i.imgur.com/WJKrFHY.png",
-      title: "UwU",
-      desc: "UWUUUUUU",
-      file: "selam  owo",
-      link: "uwu",
-    },
+    }
   ] as IBlogProps[],
 };
 
