@@ -1,13 +1,13 @@
-import { CONFIG, IBlogProps } from "@libs/config";
 import { useEffect, useState } from "react";
-
 import { Header } from "@components/Header";
 import { NavbarPc } from "@components/NavbarPc";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from 'remark-gfm';
+import fs from "fs"
 import { useRouter } from "next/router";
 import matter from 'gray-matter';
-const Post = ({ data } : any) => {
+const Post = ( turned  : any) => {
+  console.log(turned)
   const router = useRouter()
   const { uid } = router.query
   const [title, setTitle] = useState("")
@@ -68,41 +68,8 @@ const Post = ({ data } : any) => {
 
 };
 
-/*
-dangerouslySetInnerHTML={ { __html: markdown } }
-*/
-
-/*
-export async function getStaticProps() {
-  const router = useRouter()
-  const { uid } = router.query
-  let data;
-  CONFIG.BLOG.filter(r => r.link === uid).map(r => {
-    data = getSortedData(r.file)
-  })
-  return {
-    props : {
-      data
-    }
-  }
-}
-*/
-
 
 export default Post;
 
 
 
-
-`
----
-description: blog
-title: Noir's Code
-date: 2008
-photo: https://i.imgur.com/WJKrFHY.png
-title: Hello World
-desc: This is a blog post
-file: hello-world.md
-link: helloworld
----
-`

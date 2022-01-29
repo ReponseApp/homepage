@@ -1,5 +1,4 @@
 
-
 export const CONFIG = {
   NAVBAR_LIST: [
     {
@@ -19,16 +18,6 @@ export const CONFIG = {
         href : "#"
     }
   ] as INavbarProps[],
-
-  BLOG: [
-    { 
-      photo: "https://i.imgur.com/WJKrFHY.png",
-      title: "Hello World",
-      desc: "This is a blog post",
-      file: "hello-world.md",
-      link: "helloworld",
-    }
-  ] as IBlogProps[],
 };
 
 interface INavbarProps {
@@ -36,10 +25,3 @@ interface INavbarProps {
   href: string;
 }
 
-export interface IBlogProps {
-  photo: string;
-  title: string;
-  desc: string;
-  link: string;
-  file: any;
-}

@@ -1,15 +1,19 @@
 import { CONFIG } from "@libs/config";
 import { NavbarPc } from "@components/NavbarPc";
 import { Header } from "@components/Header";
-
-const BlogIndex = () => {
+import { useEffect, useState } from "react";
+import path from "path";
+import fs from "fs";
+import matter from "gray-matter";
+function BlogIndex( turned:any ) {
+  console.log("zurting: ",turned)
   return (
-    <div>
+    <div> 
       <NavbarPc />
       <div className="mx-auto items-center w-9/12">
         <div className="">
-          {CONFIG.BLOG.map((r) => (
-            <div className="flex bg-gray-900 mt-5 p-5 rounded-xl">
+          {turned.turned.length > 0 && turned.turned.map((r:any,i:any) => (
+            <div className="flex bg-gray-900 mt-5 p-5 rounded-xl" key={i}>
               <div className="bg-transparent">
                 <img src={r.photo} className="h-20 rounded-lg" alt="" />
               </div>
@@ -31,7 +35,27 @@ const BlogIndex = () => {
       
   )
 };
+export async function getStaticProps(context:any) {
+  let data: any[] = [];
+  const file =  fs.readdirSync("./public/md",) 
+  const data2 = file.map(async(value) => {
+   let file = fs.readFileSync("./public/md/"+value)
+    let dataset =  matter(file).data
+    let link = value.split(".")[0]
+    let title = dataset.title
+    let desc = dataset.description
+    let photo = dataset.photo
+    data.push({link,title,desc,photo})
+  })
+ console.log("detta: ",data)
+  return {
+    props: {
+      turned: data
+    }
+    
+  }
 
+}
 export default BlogIndex;
 
 
