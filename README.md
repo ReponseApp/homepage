@@ -40,4 +40,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ### 🙏 Thanks
 
-[Nuxt.js](https://nuxtjs.org), [Tailwind CSS](https://github.com/tailwindcss/tailwindcss), amazing module authors and contributors of this project!
+[Next.js](https://nextjs.org), [Tailwind CSS](https://github.com/tailwindcss/tailwindcss), amazing module authors and contributors of this project!
